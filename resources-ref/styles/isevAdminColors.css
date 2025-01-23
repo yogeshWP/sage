@@ -1,0 +1,122 @@
+
+
+/* variables */
+:root {
+  --isev-green: #7CBB36;
+  --isev-dark-green: #0e7b17;
+  --isev-dark-grey: #1d2327;
+  --isev-white: #FFFFFF;
+}
+
+#adminmenuback, #adminmenuwrap, #adminmenu, #adminmenu .wp-submenu {
+  background-color: var(--isev-green);
+}
+
+#collapse-button:hover {
+  color: var(--isev-white);
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, #adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow div {
+  background-color: var(--isev-dark-green);
+}
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus,
+#adminmenu li > a.menu-top:hover, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu{
+  background-color: var(--isev-dark-green);
+  color: var(--isev-white);
+}
+
+#collapse-button {
+  color: var(--isev-white);
+}
+
+/*sub menu*/
+#adminmenu .wp-has-current-submenu .wp-submenu a, #adminmenu .wp-has-current-submenu .wp-submenu a:focus, #adminmenu .wp-has-current-submenu .wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu a:active {
+  color: var(--isev-white);
+  background-color: var(--isev-dark-grey);
+}
+
+/* popup menu wp sub menu */
+
+/* ul active */
+#adminmenu .wp-has-current-submenu .wp-submenu {
+  color: var(--isev-white);
+  background-color: var(--isev-dark-grey);
+}
+
+#adminmenu li:hover div.wp-menu-image:before, #adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before {
+  color: var(--isev-white) !important;
+}
+
+#adminmenu a:hover, #adminmenu li.menu-top > a:focus, #adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:focus {
+  color: var(--isev-white);
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .current a, #adminmenu .wp-has-current-submenu .wp-submenu a.current, #adminmenu .wp-has-current-submenu .wp-submenu a.current:focus, #adminmenu .wp-has-current-submenu .wp-submenu a.current:hover, #adminmenu .wp-has-current-submenu .wp-submenu a.current:active {
+  color: var(--isev-white);
+  background-color: var(--isev-gray);
+  border-left: var(--isev-dark-green) 4px solid;
+}
+
+/* replace wordpress logo with isev logo */
+#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+  content: url('../../resources/images/isev-logo.png') !important;
+  position: absolute;
+  top: 0;
+}
+
+/* replace footer-thankyou text with thank you for choosing isev */
+
+#footer-thankyou {
+  display: none;
+}
+
+#footer-left:after {
+  content: 'Thank you for choosing isev';
+  display: block;
+}
+
+/* login page */
+body.login {
+  /*background: linear-gradient(180deg, #7CBB36 0%, #0e7b17 100%);*/
+}
+
+.login #nav a, .login #backtoblog a {
+  /*color: #FFFFFF;*/
+}
+
+.login h1 a {
+  display: none;
+}
+
+/*add logo to form */
+.login form:before {
+  content: url('../../resources/images/isev-logo-lg.png');
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.login form {
+  background-color: var(--isev-white);
+  border-radius: 10px;
+}
+
+.login .message, .login .notice, .login .success {
+  border-left: 4px solid var(--isev-green);
+  border-radius: 10px;
+}
+
+/* login button and eye icon */
+.login #wp-submit {
+  background-color: var(--isev-green);
+  border-color: var(--isev-green);
+}
+.fa, .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+.fas.fa-pound-sign::before {
+  content: "\f154";
+}
