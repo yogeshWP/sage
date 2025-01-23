@@ -1,0 +1,116 @@
+
+
+/* variables */
+:root {
+  --bytestechnolab-green: #da3333;
+  --bytestechnolab-dark-green: #0e7b17;
+  --bytestechnolab-dark-grey: #1d2327;
+  --bytestechnolab-white: #FFFFFF;
+}
+
+#adminmenuback, #adminmenuwrap, #adminmenu, #adminmenu .wp-submenu {
+  background-color: var(--bytestechnolab-green);
+}
+
+#collapse-button:hover {
+  color: var(--bytestechnolab-white);
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, #adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow div {
+  background-color: var(--bytestechnolab-dark-green);
+}
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus,
+#adminmenu li > a.menu-top:hover, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu{
+  background-color: var(--bytestechnolab-dark-green);
+  color: var(--bytestechnolab-white);
+}
+
+#collapse-button {
+  color: var(--bytestechnolab-white);
+}
+
+/*sub menu*/
+#adminmenu .wp-has-current-submenu .wp-submenu a, #adminmenu .wp-has-current-submenu .wp-submenu a:focus, #adminmenu .wp-has-current-submenu .wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu a:active {
+  color: var(--bytestechnolab-white);
+  background-color: var(--bytestechnolab-dark-grey);
+}
+
+/* popup menu wp sub menu */
+
+/* ul active */
+#adminmenu .wp-has-current-submenu .wp-submenu {
+  color: var(--bytestechnolab-white);
+  background-color: var(--bytestechnolab-dark-grey);
+}
+
+#adminmenu li:hover div.wp-menu-image:before, #adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before {
+  color: var(--bytestechnolab-white) !important;
+}
+
+#adminmenu a:hover, #adminmenu li.menu-top > a:focus, #adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:focus {
+  color: var(--bytestechnolab-white);
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .current a, #adminmenu .wp-has-current-submenu .wp-submenu a.current, #adminmenu .wp-has-current-submenu .wp-submenu a.current:focus, #adminmenu .wp-has-current-submenu .wp-submenu a.current:hover, #adminmenu .wp-has-current-submenu .wp-submenu a.current:active {
+  color: var(--bytestechnolab-white);
+  background-color: var(--bytestechnolab-gray);
+  border-left: var(--bytestechnolab-dark-green) 4px solid;
+}
+
+/* replace wordpress logo with bytestechnolab logo */
+#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+  content: url('../../resources/images/bytestechnolab-logo.svg') !important;
+  position: absolute;
+  top: 0;
+}
+
+/* replace footer-thankyou text with thank you for choosing bytestechnolab */
+
+#footer-thankyou {
+  display: none;
+}
+
+#footer-left:after {
+  content: 'Thank you for choosing bytestechnolab';
+  display: block;
+}
+
+/* login page */
+body.login {
+  /*background: linear-gradient(180deg, #da3333 0%, #0e7b17 100%);*/
+}
+
+.login #nav a, .login #backtoblog a {
+  /*color: #FFFFFF;*/
+}
+
+.login h1 a {
+  display: none;
+}
+
+/*add logo to form */
+.login form:before {
+  content: url('../../resources/images/bytestechnolab-logo.svg');
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.login form {
+  background-color: var(--bytestechnolab-white);
+  border-radius: 10px;
+}
+
+.login .message, .login .notice, .login .success {
+  border-left: 4px solid var(--bytestechnolab-green);
+  border-radius: 10px;
+}
+
+/* login button and eye icon */
+.login #wp-submit {
+  background-color: var(--bytestechnolab-green);
+  border-color: var(--bytestechnolab-green);
+}
+
