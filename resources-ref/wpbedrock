@@ -1,0 +1,77 @@
+Wordpress with Bedrock and Sage wordpress start theme
+# What is Bedrock?
+-Bedrock is a WordPress boilerplate.
+-WordPress boilerplate with Composer, easier configuration, and an improved folder structure
+1) Why use Bedrock?
+Better folder structure
+Dependency management with Composer
+Easy WordPress configuration with environment specific files
+Environment variables with Dotenv
+Autoloader for mu-plugins (use regular plugins as mu-plugins)
+Enhanced security (separated web root and secure passwords with wp-password-bcrypt)
+
+2)Requirements
+PHP >= 8.1
+
+3)Installing Bedrock with Composer
+Create a new Bedrock project:
+$ composer create-project roots/bedrock
+
+
+4)Add theme(s) in web/app/themes/ as you would for a normal WordPress site
+5)Set the document root on your webserver to Bedrock's web folder: /path/to/site/web/
+6)Access WordPress admin at https://example.com/wp/wp-admin/
+
+7)# Multisite
+Bedrock is multisite network compatible, but needs the roots/multisite-url-fixer mu-plugin on subdomain installs to make sure admin URLs function properly. This plugin is not needed on subdirectory installs but will work well with them. From your Bedrock directory:
+
+$ composer require roots/multisite-url-fixer
+
+
+
+1) What is Sage?
+Sage is a WordPress starter theme.
+
+2) Why use Sage?
+Harness the power of Laravel and its available packages thanks to Acorn.
+Clean, efficient theme templating utilizing Laravel Blade.
+Lightning fast frontend development workflow powered by Bud.
+Out of the box support for Tailwind CSS.
+
+3) Getting Started
+Windows users
+
+WSL is required in order to use Sage. Build commands must be ran from a WSL environment.
+
+Sage relies on Node.js based tools to manage dependencies and build assets. We recommend using Volta to install and manage Node.js. We also recommend using Yarn. After installing Volta:
+
+# Install the latest Node.js LTS release
+$ volta install node
+
+# Globally install Yarn
+$ npm install --global yarn
+
+
+# Installing Acorn
+Sage requires Acorn but doesn't ship with it included. This is to give you the flexibility to include it in a way that works best for your environment. There's a few different ways to install Acorn.
+
+See the Acorn installation docs for additional details.
+composer require roots/acorn
+# Installing Sage with Composer
+Install Sage using Composer from your WordPress themes directory (replace your-theme-name below with the name of your theme):
+
+# From your WordPress themes directory, run:
+$ composer create-project roots/sage your-theme-name
+To install the latest development version of Sage, add dev-main to the end of the command:
+
+$ composer create-project roots/sage your-theme-name dev-main
+
+
+# Build assets
+You must build theme assets in order to access your site. Failing to build the assets will result in the error:
+
+The manifest [/path/to/sage/public/manifest.json] cannot be found.
+# Running the first build
+Run yarn from the theme directory to install dependencies
+Update bud.config.js with your local dev URL
+yarn build — Compile assets
