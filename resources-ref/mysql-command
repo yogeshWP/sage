@@ -1,0 +1,210 @@
+
+1)Connect to the PostgreSQL Database:
+sudo -u postgres psql
+2)Create a New User:
+CREATE USER isevcraft1 WITH PASSWORD 'root1';
+3)Create a Database
+CREATE DATABASE isevcraft1
+4)Grant Privileges:
+GRANT ALL PRIVILEGES ON DATABASE isevcraft1 TO isevcraft1;
+
+5)Connect to a Database:
+psql -h localhost -U isevcraft1 -d isevcraft1
+
+6)Stop PostgreSQL:
+sudo systemctl stop postgresql
+
+7)Start PostgreSQL:
+sudo systemctl start postgresql ALTER USER isevcraft WITH PASSWORD 'roots';
+
+sudo -u postgres psql ALTER USER isevcraft WITH PASSWORD 'root1'
+sudo -u postgres psql -c "ALTER USER isevcraft WITH PASSWORD 'roots';"
+
+psql -h localhost -U isevcraft -d isevcraft
+
+
+Import PostgreSQL:
+Import the Database: pg_restore -h localhost -U isevcraft -d isevcraft -v isevdb.sql
+psql -h localhost -U isevcraft1 -d isevcraft1 -f \var\www\html\isevcraft\isevdb.sql
+
+gunzip -c your_dump_file.gz | pg_restore -h localhost -U your_username -d your_database -v
+
+!@#Dmin1234@3694
+
+rm mydir/*
+
+
+create zip command
+------------------------
+zip -r pc.zip *(for all folder)
+
+zip -r Manager-26-11-24.zip *
+
+zip -r AdvancedReports_7_1_25.zip *
+
+un zip command
+------------------------
+unzip Smtp.zip
+
+unzip agentresponsestor-fresh-demo.zip
+
+
+
+remove folder command:
+----------------------------------
+rm -rf folder_name
+rm -rf Smtp
+
+
+
+export command
+------------------------
+mysqldump --no-tablespaces -u liveproc_main -p liveproc_main > liveproc_main_28_8_24.sql
+
+
+mysqldump -u root -p isevcraft > isevcraftloc.sql
+
+
+mysqldump --no-tablespaces -u demosold_user -p carvergr_db > carvergr_db_full_bk_030624.sql
+
+
+
+mysqldump --no-tablespaces -u demospok_user -p demospok_website_244p3 > demospok_website_244p3_full_bk_080823.sql
+Stella321!
+
+mysqldump --no-tablespaces -u root -p  eplan_db > /var/www/html/eplan/eplan_22-9-23.sql
+mysqldump -u root -p  eplan_db > /var/www/html/eplan/eplan_22-9-23.sql
+
+
+mysqldump --no-tablespaces -u eleyspor_2020 -p eleyspor_2023 > eleyspor_2023_10_8_23.sql
+
+mysqldump --no-tablespaces -u demosold_user -p demosold_website_244 > demosold_website_244_full_bk_24_10_24.sql
+
+import command
+-------------------------
+import db in local:
+use <name_of_your_database>;
+
+source <path_of_your_.sql>
+
+mysql -u root -p scalerocketwithdata < b2b-scaleroket.sql
+
+
+mysql -u root -p cosse_db < cosseconsultancy-migrate-20240729082713.sql
+
+
+mysql --default-character-set=utf8 -u demoproc_procredible_user -p demoproc_procredibledb < procredible.sql
+
+http://premierinflatewpdemo.loc
+-------------------------
+db: demoprem_wp
+user: demoprem_wp
+pw: ^kdJvO7+fkuK
+mysql -u root -p rhtraining_db < /var/www/html/rhtraining/rhtraining-migrate-20240328131711.sql
+
+mysql -u root -p earlswood2 < /media/yogesh/d4c32a37-fc55-4ab6-90de-406720da9c44/earlswood-db/newdb/earlswood_2023-09-28.sql
+mysql -u root -p eleyspor_new_2023 < /media/yogesh/d4c32a37-fc55-4ab6-90de-406720da9c44/Leon-html-projects/eys/eleyspor_2023_10_8_23_bk.sql
+mysql -u root -p cartwrightswastedisposal1 < cartwdis_website_v21.sql
+mysql -u root -p eplan_dbcraft4 < /var/www/html/e-plan/eplan_22-9-23.sql
+mysql -u root -p eplan_db < /var/www/html/eplan/e-plan--2023-09-28-072800--v4.5.5.sql
+
+
+mysql -h IP -r -u root -p eleyspor_2023 < /media/yogesh/d4c32a37-fc55-4ab6-90de-406720da9c44/Leon-html-projects/eys/eleyspor_2023_10_8_23.sql
+mysql -hIP -r -u root -p eleyspor_2023 < /media/yogesh/d4c32a37-fc55-4ab6-90de-406720da9c44/Leon-html-projects/eys/ source eleyspor_2023_10_8_23.sql
+
+mysql -u root -p premierinflatedemo < premier-inflate_231121_100655_51zyk5z9lc_v3.1.11.sql
+
+mysql -u root -p selectalarms_db < sas--2023-10-04-114506--v3.6.14.sql
+
+virtual host
+--------------------------
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/sagewp.loc.conf
+sudo nano /etc/apache2/sites-available/sagewp.loc.conf
+sudo a2ensite sagewp.loc.conf
+
+ServerName sagewp.loc
+ServerAlias sagewp.loc
+procredible-acf-theme
+systemctl reload apache2
+
+http://procredible-co-uk.loc
+
+
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/storebessys.loc.conf
+sudo nano /etc/apache2/sites-available/storebessys.loc.conf
+sudo a2ensite storebessys.loc.conf
+
+ServerName storebessys.loc
+ServerAlias storebessys.loc
+
+
+
+
+carvergroup-agentresponse-store.loc
+
+
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/scalerocket.loc.conf
+sudo nano /etc/apache2/sites-available/scalerocket.loc.conf
+sudo a2ensite scalerocket.loc.conf
+	
+primeandplace
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/billingsandedmonds-demo.loc.conf
+sudo nano /etc/apache2/sites-available/billingsandedmonds-demo.loc.conf
+sudo a2ensite scalerocket.loc.conf	
+billingsandedmonds-demo.loc
+
+ServerName scalerocket.loc
+ServerAlias scalerocket.loc
+
+ServerName primeandplace.loc
+ServerAlias primeandplace.loc
+premier-inflate-wp
+
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/thetopcliniccoach.loc.conf
+sudo nano /etc/apache2/sites-available/thetopcliniccoach.loc.conf
+sudo a2ensite woodbypostm2.loc.conf	
+thetopcliniccoach.loc
+
+ServerName primeandplace.loc
+ServerAlias primeandplace.loc
+
+sudo nano /etc/apache2/sites-available/spokzdemo.loc.conf
+
+
+ServerName thetopcliniccoach.loc
+ServerAlias thetopcliniccoach.loc
+hawthorn.loc
+hawthorn.loc
+
+http://hawthorn.loc
+http://woodbypostm2.loc
+
+http://e-plan.loc
+
+sudo nano /etc/hosts.txt
+
+mysqldump -u root -p inspire_db > /var/www/html/inspire/inspire_db_full_bk_010923.sql
+
+
+<p>We are committed to providing a professional service to all our clients and customers. When something goes wrong, we need you to tell us about it. This will help us to improve our standards. Our Complaints Procedure can be found by clicking this link: <a href="https://www.nockdeighton.co.uk/uploads/docs/Complaints-Handling-020523.pdf#asset:12091994@1:url" target="_blank">Complaints Handling 020523</a></p>
+
+
+
+ if($event->message['Branch']['value']==2054){
+                            $to = 'kidderminster@nockdeighton.co.uk';
+                            //$to = $rows['field_officeEmailAddress'];
+                        }else if($event->message['Branch']['value']==2050){
+                            $to = 'ludlow@nockdeighton.co.uk';
+                        }else if($event->message['Branch']['value']==2032){
+                            $to = 'ironbridge@nockdeighton.co.uk';
+                        }else if($event->message['Branch']['value']==1978){
+                            $to = 'ludlow@nockdeighton.co.uk';
+                        }else if($event->message['Branch']['value']==727){
+                            $to = 'telford@nockdeighton.co.uk';
+                        }else if($event->message['Branch']['value']==187){
+                            $to = 'bridgnorth@nockdeighton.co.uk';
+                        }else if($event->message['Branch']['value']==12087517){
+                            $to = 'ironbridge@nockdeighton.co.uk';
+                        }else{
+                            $to = $rows['field_officeEmailAddress'];
+                        }
